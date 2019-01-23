@@ -221,7 +221,8 @@ u2_t os_crc16 (xref2u1_t d, uint len);
 #define TABLE_GET_OSTIME(table, index) table_get_ostime(RESOLVE_TABLE(table), index)
 #define TABLE_GET_U1_TWODIM(table, index1, index2) table_get_u1(RESOLVE_TABLE(table)[index1], index2)
 
-#if defined(__AVR__)
+//#if defined(__AVR__)
+#if true
     #include <avr/pgmspace.h>
     // Macro to define the getter functions. This loads data from
     // progmem using pgm_read_xx, or accesses memory directly when the
